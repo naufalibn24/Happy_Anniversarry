@@ -14,6 +14,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
-app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
-});
+const server = app.listen(port, () => console.log(`Listening on port ${port}`));
+
+module.exports = server;
