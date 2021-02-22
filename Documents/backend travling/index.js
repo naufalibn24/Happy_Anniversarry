@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 app.get("/", (req, res, next) => {
-  res.send("Hello World");
+  res.send("Deploy Success!");
 });
 const server = app.listen(port, () => console.log(`Listening on port ${port}`));
 
